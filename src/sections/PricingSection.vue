@@ -49,7 +49,7 @@ const submitForm = async () => {
 
       if (response.ok) {
         const result = await response.json();
-        console.log("Response from server:", result);
+        // console.log("Response from server:", result);
 
         // Show success toast
         toast.add({
@@ -115,7 +115,9 @@ const submitForm = async () => {
         <p class="font-thin text-[19px]">
           Explore QuantGenie risk-free and unlock the full potential of automated and manual trading for 7 days.
         </p>
-        <Button @click="visible = true" title="Get Started" />
+        <div class="mt-6">
+        <a href="https://angel-one.onelink.me/Wjgr/8nl10c7d" target="_blank"><Button title="Get Started" /></a>
+      </div>
       </div>
       <div class="p-8 card rounded-3xl space-y-6">
         <h3 class="text-custom-blue text-[44px]">Affordable Monthly Pricing</h3>

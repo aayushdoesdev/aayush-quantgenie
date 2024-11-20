@@ -1,33 +1,33 @@
 <script setup>
 import { ref } from "vue";
 import Button from "../components/Button.vue";
-import Dialog from "primevue/dialog";
+// import Dialog from "primevue/dialog";
 
-const visible = ref(false);
+// const visible = ref(false);
 
 
 // Form fields
-const name = ref('');
-const email = ref('');
-const phoneNumber = ref('');
-const message = ref('');
-const isEmailValid = ref(true);
+// const name = ref('');
+// const email = ref('');
+// const phoneNumber = ref('');
+// const message = ref('');
+// const isEmailValid = ref(true);
 
 // Function to validate email using regex pattern
-const validateEmail = () => {
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  isEmailValid.value = emailPattern.test(email.value);
-};
+// const validateEmail = () => {
+//   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//   isEmailValid.value = emailPattern.test(email.value);
+// };
 
 // Form submit handler
-const submitForm = () => {
-  if (isEmailValid.value && phoneNumber.value.length === 10) {
-    console.log('Form submitted successfully');
-    visible.value = false;
-  } else {
-    alert('Please enter valid details');
-  }
-};
+// const submitForm = () => {
+//   if (isEmailValid.value && phoneNumber.value.length === 10) {
+//     console.log('Form submitted successfully');
+//     visible.value = false;
+//   } else {
+//     alert('Please enter valid details');
+//   }
+// };
 </script>
 
 <template>
@@ -54,7 +54,7 @@ const submitForm = () => {
         advanced manual trading tools.
       </p>
       <div class="mt-6">
-        <a href="https://angel-one.onelink.me/Wjgr/8nl10c7d" target="_blank"><Button title="Get Started" /></a>
+        <a href="https://app.quantgenie.net/register" target="_blank"><Button title="Get Started" /></a>
       </div>
     </div>
     <div class="w-full xl:w-[45%] relative z-10">
